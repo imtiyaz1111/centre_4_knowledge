@@ -1,0 +1,309 @@
+/* =====================================================
+   COURSES PAGE HEADER
+===================================================== */
+.courses-header {
+  position: relative;
+  padding: 110px 0 90px;
+  background: rgba(13, 71, 255, 0.18);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* =========================
+   BACKGROUND SHAPES
+========================= */
+.courses-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Blue radial glow */
+.courses-shape-one {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(13,71,255,0.18), transparent 70%);
+  border-radius: 50%;
+  top: -300px;
+  right: -260px;
+}
+
+/* Angled soft panel */
+.courses-shape-two {
+  width: 520px;
+  height: 300px;
+  background: linear-gradient(
+    135deg,
+    rgba(13,71,255,0.10),
+    rgba(13,71,255,0.02)
+  );
+  transform: rotate(-10deg);
+  bottom: -160px;
+  left: -180px;
+  border-radius: 50px;
+}
+
+/* Keep content above shapes */
+.courses-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   TEXT CONTENT
+========================= */
+.courses-badge {
+  display: inline-block;
+  background: rgba(13,71,255,0.1);
+  color: #0d47ff;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.courses-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0a1f44;
+  margin: 22px 0 18px;
+  line-height: 1.2;
+}
+
+.courses-title span {
+  color: #0d47ff;
+}
+
+.courses-subtitle {
+  max-width: 620px;
+  font-size: 1.05rem;
+  color: #5f6f85;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+.courses-breadcrumb {
+  font-size: 0.95rem;
+  color: #5f6f85;
+}
+
+.courses-breadcrumb a {
+  color: #0d47ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.courses-breadcrumb span {
+  margin: 0 6px;
+}
+
+/* =========================
+   RIGHT VISUAL CARDS
+========================= */
+.courses-visual {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.courses-card {
+  background: #ffffff;
+  padding: 26px 24px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 25px 55px rgba(13,71,255,0.15);
+}
+
+.courses-card.secondary {
+  margin-top: 60px;
+}
+
+.courses-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d47ff;
+  margin-bottom: 6px;
+}
+
+.courses-card p {
+  font-size: 0.9rem;
+  color: #5f6f85;
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVE HEADER
+========================= */
+@media (max-width: 991px) {
+  .courses-header {
+    padding: 90px 0 70px;
+    text-align: center;
+  }
+
+  .courses-title {
+    font-size: 2.3rem;
+  }
+
+  .courses-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .courses-header {
+    padding: 70px 0 60px;
+  }
+
+  .courses-title {
+    font-size: 2rem;
+  }
+
+  .courses-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* =====================================================
+   SEARCH BAR
+===================================================== */
+.course-search-section {
+  padding: 40px 0;
+  background: #f8fbff;
+}
+
+.search-wrapper {
+  max-width: 520px;
+  margin: auto;
+  position: relative;
+}
+
+.search-wrapper i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #0d47ff;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 14px 18px 14px 52px;
+  border-radius: 30px;
+  border: 1px solid #dbe5ff;
+  font-size: 0.95rem;
+  outline: none;
+  background: #ffffff;
+}
+
+.search-wrapper input:focus {
+  border-color: #0d47ff;
+  box-shadow: 0 0 0 4px rgba(13,71,255,0.15);
+}
+
+/* =====================================================
+   COURSES GRID + MODERN SHAPES
+===================================================== */
+.courses-section {
+  position: relative;
+  padding: 90px 0;
+  background: #f8fbff;
+  overflow: hidden;
+}
+
+/* Modern floating shapes */
+.courses-section::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(13,71,255,0.12), transparent 70%);
+  top: -300px;
+  left: -300px;
+  border-radius: 50%;
+}
+
+.courses-section::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background: linear-gradient(
+    135deg,
+    rgba(13,71,255,0.10),
+    rgba(13,71,255,0.02)
+  );
+  bottom: -160px;
+  right: -200px;
+  transform: rotate(-12deg);
+  border-radius: 60px;
+}
+
+/* Keep cards above shapes */
+.courses-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =====================================================
+   COURSE CARD (FULL WIDTH IMAGE)
+===================================================== */
+.course-card {
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden; /* 🔥 IMPORTANT: clips image */
+  box-shadow: 0 20px 45px rgba(13,71,255,0.08);
+  transition: all 0.35s ease;
+  height: 100%;
+}
+
+.course-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 35px 70px rgba(13,71,255,0.18);
+}
+
+/* Full-width image */
+.course-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card body */
+.course-card-body {
+  padding: 28px 26px 32px;
+  text-align: center;
+}
+
+.course-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0a1f44;
+  margin-bottom: 10px;
+}
+
+.course-desc {
+  font-size: 0.95rem;
+  color: #5f6f85;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   CTA SECTION
+===================================================== */
+.course-cta {
+  background: linear-gradient(135deg, #0d47ff, #1b74ff);
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.course-cta h2 {
+  font-weight: 700;
+}
+
+.course-cta p {
+  opacity: 0.95;
+}

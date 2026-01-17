@@ -1783,3 +1783,59 @@ body {
   color: #00e5ff;
   font-weight: 600;
 }
+/* =========================
+   FLOATING ACTION BUTTONS
+========================= */
+.floating-buttons {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 9999;
+}
+
+.float-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Scroll Button */
+.scroll-btn {
+  background: #1a2b4f;
+  display: none; /* shown on scroll */
+}
+
+/* Call Button */
+.call-btn {
+  background: #0d47ff;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  background: #25d366;
+}
+
+/* Mobile adjustment */
+@media (max-width: 575px) {
+  .floating-buttons {
+    right: 15px;
+    bottom: 20px;
+  }
+}

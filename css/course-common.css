@@ -1,0 +1,456 @@
+/* =========================
+   COURSE PAGE HEADER
+========================= */
+.course-header {
+  position: relative;
+  padding: 110px 0 90px;
+  background: rgba(13,71,255,0.15);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* =========================
+   BACKGROUND SHAPES
+========================= */
+.course-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Soft blue blob */
+.course-shape-one {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(13,71,255,0.12), transparent 70%);
+  border-radius: 50%;
+  top: -300px;
+  right: -260px;
+}
+
+/* Angled light panel */
+.course-shape-two {
+  width: 520px;
+  height: 300px;
+  background: linear-gradient(
+    135deg,
+    rgba(13,71,255,0.08),
+    rgba(13,71,255,0.02)
+  );
+  transform: rotate(-10deg);
+  bottom: -160px;
+  left: -180px;
+  border-radius: 50px;
+}
+
+/* Content above shapes */
+.course-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   TEXT CONTENT
+========================= */
+.course-badge {
+  display: inline-block;
+  background: rgba(13,71,255,0.1);
+  color: #0d47ff;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.course-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0a1f44;
+  margin: 22px 0 18px;
+  line-height: 1.2;
+}
+
+.course-title span {
+  color: #0d47ff;
+}
+
+.course-subtitle {
+  max-width: 620px;
+  font-size: 1.05rem;
+  color: #5f6f85;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+.course-breadcrumb {
+  font-size: 0.95rem;
+  color: #5f6f85;
+}
+
+.course-breadcrumb a {
+  color: #0d47ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.course-breadcrumb span {
+  margin: 0 6px;
+}
+
+/* =========================
+   RIGHT VISUAL
+========================= */
+.course-visual {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.course-visual .visual-card {
+  background: #ffffff;
+  padding: 26px 24px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 25px 55px rgba(13,71,255,0.15);
+}
+
+.course-visual .visual-card h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0d47ff;
+  margin-bottom: 6px;
+}
+
+.course-visual .visual-card p {
+  font-size: 0.9rem;
+  color: #5f6f85;
+  margin: 0;
+}
+
+.course-visual .visual-card.secondary {
+  margin-top: 60px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+  .course-header {
+    padding: 90px 0 70px;
+    text-align: center;
+  }
+
+  .course-title {
+    font-size: 2.3rem;
+  }
+
+  .course-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .course-header {
+    padding: 70px 0 60px;
+  }
+
+  .course-title {
+    font-size: 2rem;
+  }
+
+  .course-subtitle {
+    font-size: 0.95rem;
+  }
+}
+/* =========================
+   COURSE CORE SECTION
+========================= */
+.course-core-section {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(
+    135deg,
+    #f8fbff 0%,
+    #eef4ff 50%,
+    #f1fbf9 100%
+  );
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* =========================
+   BACKGROUND SHAPES
+========================= */
+.course-core-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Large soft blue glow */
+.shape-one {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(13,71,255,0.14),
+    transparent 70%
+  );
+  border-radius: 50%;
+  top: -300px;
+  left: -280px;
+}
+
+/* Teal curved panel */
+.shape-two {
+  width: 520px;
+  height: 280px;
+  background: linear-gradient(
+    135deg,
+    rgba(56,191,167,0.18),
+    rgba(56,191,167,0.05)
+  );
+  border-radius: 60% 40% 0 0;
+  bottom: -160px;
+  right: -220px;
+}
+
+/* Keep content above shapes */
+.course-core-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   ENHANCED CONTENT BLOCK
+========================= */
+.course-block-enhanced {
+   
+  position: relative;
+  background: #ffffff;
+  padding: 42px 40px;
+  border-radius: 24px;
+  box-shadow: 0 30px 70px rgba(13,71,255,0.1);
+}
+
+.course-block-enhanced::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, #0d47ff, #38bfa7);
+  border-radius: 24px 0 0 24px;
+}
+
+/* Title */
+.course-block-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0a1f44;
+}
+
+.course-block-title span {
+  color: #0d47ff;
+}
+
+/* Text */
+.course-text p {
+  font-size: 1rem;
+  color: #5f6f85;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+
+/* =========================
+   ENHANCED POINTS
+========================= */
+.course-points-enhanced {
+  list-style: none;
+  padding: 0;
+}
+
+.course-points-enhanced li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: #f4f8ff;
+  padding: 18px 20px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.course-points-enhanced li:hover {
+  transform: translateX(6px);
+  background: #eef4ff;
+}
+
+.point-icon {
+  font-size: 1.1rem;
+  color: #0d47ff;
+  margin-top: 3px;
+}
+
+/* Responsive */
+@media (max-width: 575px) {
+  .course-block-enhanced {
+    padding: 30px 24px;
+  }
+
+  .course-block-title {
+    font-size: 1.6rem;
+  }
+
+  .course-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================
+   CITY CARDS
+========================= */
+.city-card {
+    text-decoration: none;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 20px 45px rgba(13,71,255,0.08);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.city-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 65px rgba(13,71,255,0.15);
+}
+
+/* Image */
+.city-image {
+  position: relative;
+  height: 140px;
+  overflow: hidden;
+}
+
+.city-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.city-card:hover .city-image img {
+  transform: scale(1.08);
+}
+
+/* Overlay gradient */
+.city-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(13,71,255,0.05),
+    rgba(13,71,255,0.35)
+  );
+}
+
+/* Content */
+.city-content {
+   
+  padding: 16px 18px;
+  text-align: center;
+}
+.col a{
+    text-decoration: none;
+}
+.city-content h6 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0a1f44;
+  margin-bottom: 4px;
+}
+
+.city-content p {
+  font-size: 0.85rem;
+  color: #5f6f85;
+  margin: 0;
+}
+/* =========================
+   CITY SEARCH
+========================= */
+.city-search {
+  max-width: 360px;
+}
+
+.city-search input {
+  border-radius: 30px;
+  padding: 12px 18px;
+  font-size: 0.95rem;
+  border: 1px solid rgba(13,71,255,0.25);
+  box-shadow: 0 10px 25px rgba(13,71,255,0.08);
+}
+
+.city-search input:focus {
+  outline: none;
+  border-color: #0d47ff;
+  box-shadow: 0 12px 30px rgba(13,71,255,0.2);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 575px) {
+  .city-image {
+    height: 120px;
+  }
+
+  .city-content h6 {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+  .course-core-section {
+    padding: 80px 0;
+  }
+
+  .course-sidebar {
+    position: relative;
+    top: 0;
+  }
+
+  .course-block {
+    padding: 30px 26px;
+  }
+
+  .course-block-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .course-core-section {
+    padding: 60px 0;
+  }
+
+  .course-block {
+    padding: 26px 22px;
+  }
+
+  .course-text,
+  .course-points li {
+    font-size: 0.95rem;
+  }
+}

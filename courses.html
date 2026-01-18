@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,7 +36,7 @@
   </head>
 
   <body>
-        <!-- TOP INFO BAR -->
+    <!-- TOP INFO BAR -->
     <div class="top-bar">
       <div class="container">
         <div class="top-left">
@@ -62,7 +62,6 @@
       </div>
     </div>
 
-   
     <!-- NAVBAR -->
     <header class="navbar">
       <div class="container nav-content">
@@ -75,7 +74,6 @@
           <a href="./courses.html">Courses</a>
           <a href="./about.html">About Us</a>
           <a href="./contact.html">Contact Us</a>
-         
         </nav>
 
         <div class="hamburger" id="hamburger">
@@ -134,28 +132,74 @@
       </div>
     </section>
 
-   
-
     <!-- ================= COURSE LIST ================= -->
     <section class="courses-section">
-       <!-- ================= SEARCH BAR ================= -->
-    <section class="course-search-section">
-      <div class="container">
-        <div class="search-wrapper">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search course (CBSE, CUET, Class 12...)"
-          />
+      <!-- ================= SEARCH BAR ================= -->
+      <section class="course-search-section">
+        <div class="container">
+          <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search course (CBSE, CUET, Class 12...)"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
       <span class="bg-shape left"></span>
       <span class="bg-shape right"></span>
 
       <div class="container">
         <div class="row g-4" id="courseList"></div>
+        <div class="mt-3 d-flex row g-4" id="staticCourseList">
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card h-100">
+              <img
+                src="./image/courses/bba-foundation-accounts.png"
+                class="course-img"
+                alt="BBA Foundation Accounts"
+              />
+              <div class="course-card-body">
+                <h4 class="course-title">BBA / Foundation Accounts</h4>
+                <p class="course-desc">
+                  Build strong accounting basics for BBA and foundation-level
+                  exams.
+                </p>
+                <a
+                  href="/courses/bba-foundation-accounts/"
+                  class="btn btn-primary mt-3"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card h-100">
+              <img
+                src="./image/courses/icse-igcse-accounts.png"
+                class="course-img"
+                alt="ICSE IGCSE Accounts"
+              />
+              <div class="course-card-body">
+                <h4 class="course-title">ICSE / IGCSE Accounts</h4>
+                <p class="course-desc">
+                  Concept-focused accounts coaching for ICSE & IGCSE students
+                  with exam-oriented preparation.
+                </p>
+                <a
+                  href="/courses/icse-igcse-accounts/"
+                  class="btn btn-primary mt-3"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -167,7 +211,7 @@
         <a href="./contact.html" class="btn btn-light btn-lg">Contact Us</a>
       </div>
     </section>
-       <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container">
         <div class="row gy-4">
@@ -262,7 +306,7 @@
         </p>
       </div>
     </footer>
- <!-- Floating Action Buttons -->
+    <!-- Floating Action Buttons -->
     <div class="floating-buttons">
       <!-- Scroll to Top -->
       <button

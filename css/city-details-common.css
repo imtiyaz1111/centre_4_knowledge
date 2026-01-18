@@ -1,0 +1,844 @@
+/* =========================
+   COURSE PAGE HEADER
+========================= */
+.course-header {
+  position: relative;
+  padding: 110px 0 90px;
+  background: rgba(13, 71, 255, 0.15);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* =========================
+   BACKGROUND SHAPES
+========================= */
+.course-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+.course-shape-one {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(13, 71, 255, 0.12), transparent 70%);
+  border-radius: 50%;
+  top: -300px;
+  right: -260px;
+}
+
+.course-shape-two {
+  width: 520px;
+  height: 300px;
+  background: linear-gradient(
+    135deg,
+    rgba(13, 71, 255, 0.08),
+    rgba(13, 71, 255, 0.02)
+  );
+  transform: rotate(-10deg);
+  bottom: -160px;
+  left: -180px;
+  border-radius: 50px;
+}
+
+/* Keep content above shapes */
+.course-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   TEXT CONTENT
+========================= */
+.course-badge {
+  display: inline-block;
+  background: rgba(13, 71, 255, 0.1);
+  color: #0d47ff;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.course-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0a1f44;
+  margin: 22px 0 18px;
+  line-height: 1.2;
+}
+
+.course-title span {
+  color: #0d47ff;
+}
+
+.course-subtitle {
+  max-width: 620px;
+  font-size: 1.05rem;
+  color: #5f6f85;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+.course-breadcrumb {
+  font-size: 0.95rem;
+  color: #5f6f85;
+}
+
+.course-breadcrumb a {
+  color: #0d47ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.course-breadcrumb span {
+  margin: 0 6px;
+}
+
+/* =========================
+   ENQUIRY FORM
+========================= */
+.enquiry-form-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 25px 55px rgba(13, 71, 255, 0.18);
+}
+
+.enquiry-form-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0a1f44;
+  margin-bottom: 6px;
+}
+
+.enquiry-form-card p {
+  font-size: 0.95rem;
+  color: #5f6f85;
+  margin-bottom: 20px;
+}
+
+.enquiry-form-card .form-control {
+  height: 48px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.enquiry-form-card button {
+  height: 48px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+  .course-header {
+    padding: 90px 0 70px;
+    text-align: center;
+  }
+
+  .course-title {
+    font-size: 2.3rem;
+  }
+
+  .enquiry-form-card {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .course-header {
+    padding: 70px 0 60px;
+  }
+
+  .course-title {
+    font-size: 2rem;
+  }
+
+  .course-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================
+   COURSE OVERVIEW 
+========================= */
+.course-overview {
+  position: relative;
+  background: #f8fbff;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* =========================
+   BACKGROUND SHAPES
+========================= */
+.co-bg-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Soft gradient blob (top-right) */
+.co-shape-one {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(13,71,255,0.12), transparent 70%);
+  border-radius: 50%;
+  top: -260px;
+  right: -260px;
+}
+
+/* Subtle dotted pattern (bottom-left) */
+.co-shape-two {
+  width: 220px;
+  height: 220px;
+  background-image: radial-gradient(#6b7280 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+  bottom: 120px;
+  left: 40px;
+  opacity: 0.35;
+}
+
+/* =========================
+   INNER WRAPPER (REPLACES CONTAINER)
+========================= */
+.course-overview-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px ;     
+  margin: 0 auto;
+  padding: 0 20px;      
+}
+
+/* =========================
+   CARD
+========================= */
+.course-overview-card {
+  background: #ffffff;
+  padding: 50px 45px;
+  border-radius: 26px;
+  box-shadow: 0 30px 70px rgba(13,71,255,0.12);
+}
+
+/* =========================
+   TITLE
+========================= */
+.course-overview .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0a1f44;
+  line-height: 1.3;
+}
+
+/* =========================
+   TEXT
+========================= */
+.course-overview p {
+  font-size: 1rem;
+  color: #5f6f85;
+  line-height: 1.8;
+}
+
+/* =========================
+   SUB HEADINGS
+========================= */
+.course-overview h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0d47ff;
+  margin-top: 30px;
+}
+
+/* =========================
+   BULLETS
+========================= */
+.course-points {
+  padding-left: 0;
+  list-style: none;
+}
+
+.course-points li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 12px;
+  font-size: 0.98rem;
+  color: #5f6f85;
+}
+
+.course-points li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #0d47ff;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+  .course-overview {
+    padding: 80px 0;
+  }
+
+  .course-overview-card {
+    padding: 40px 30px;
+  }
+
+  .course-overview .section-title {
+    font-size: 1.9rem;
+  }
+
+  .co-shape-two {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .course-overview {
+    padding: 60px 0;
+  }
+
+  .course-overview-card {
+    padding: 32px 22px;
+  }
+
+  .course-overview .section-title {
+    font-size: 1.7rem;
+  }
+}
+
+
+/* =========================
+   WHY CHOOSE US 
+========================= */
+.why-choose-us {
+  position: relative;
+  background: #f8fbff;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* =========================
+   BACKGROUND SHAPES
+========================= */
+.wc-bg-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Angled gradient panel (left) */
+.wc-shape-one {
+  width: 520px;
+  height: 380px;
+  background: linear-gradient(
+    135deg,
+    rgba(13,71,255,0.14),
+    rgba(13,71,255,0.04)
+  );
+  transform: skewY(-12deg);
+  top: -160px;
+  left: -260px;
+  border-radius: 40px;
+}
+
+/* Hollow ring (top-right) */
+.wc-shape-two {
+  width: 420px;
+  height: 420px;
+  border: 3px solid rgba(13,71,255,0.12);
+  border-radius: 50%;
+  top: -220px;
+  right: -220px;
+}
+
+/* Dotted texture (bottom-left) */
+.wc-shape-three {
+  width: 240px;
+  height: 240px;
+  background-image: radial-gradient(#6b7280 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+  bottom: 100px;
+  left: 40px;
+  opacity: 0.35;
+}
+
+/* =========================
+   INNER WRAPPER (REPLACES CONTAINER)
+========================= */
+.why-choose-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+.why-choose-card {
+  background: #ffffff;
+  padding: 50px 45px;
+  border-radius: 26px;
+  box-shadow: 0 30px 70px rgba(13,71,255,0.12);
+}
+
+/* =========================
+   TITLE
+========================= */
+.why-choose-us .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0a1f44;
+  line-height: 1.3;
+}
+
+/* =========================
+   TEXT
+========================= */
+.why-choose-us p {
+  font-size: 1rem;
+  color: #5f6f85;
+  line-height: 1.8;
+}
+
+/* =========================
+   POINTS
+========================= */
+.why-points {
+  padding-left: 0;
+  list-style: none;
+}
+
+.why-points li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  font-size: 0.98rem;
+  color: #5f6f85;
+  line-height: 1.7;
+}
+
+.why-points li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #0d47ff;
+  font-weight: 700;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+  .why-choose-us {
+    padding: 80px 0;
+  }
+
+  .why-choose-card {
+    padding: 40px 30px;
+  }
+
+  .why-choose-us .section-title {
+    font-size: 1.9rem;
+  }
+
+  .wc-shape-three {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .why-choose-us {
+    padding: 60px 0;
+  }
+
+  .why-choose-card {
+    padding: 32px 22px;
+  }
+
+  .why-choose-us .section-title {
+    font-size: 1.7rem;
+  }
+
+  .wc-shape-two {
+    display: none;
+  }
+}
+
+/* =========================
+   TEACHING METHODOLOGY (NO CONTAINER)
+========================= */
+.teaching-methodology {
+  position: relative;
+  background: #f8fbff;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* =========================
+   BACKGROUND SHAPES
+========================= */
+.tm-bg-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Diagonal gradient panel */
+.tm-shape-one {
+  width: 600px;
+  height: 420px;
+  background: linear-gradient(
+    135deg,
+    rgba(13,71,255,0.14),
+    rgba(13,71,255,0.04)
+  );
+  transform: rotate(-12deg);
+  top: -200px;
+  right: -260px;
+  border-radius: 60px;
+}
+
+/* Floating dotted texture */
+.tm-shape-two {
+  width: 220px;
+  height: 220px;
+  background-image: radial-gradient(#6b7280 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+  bottom: 120px;
+  left: 40px;
+  opacity: 0.35;
+}
+
+/* =========================
+   INNER WRAPPER (REPLACES CONTAINER)
+========================= */
+.teaching-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+.teaching-card {
+  background: #ffffff;
+  padding: 50px 45px;
+  border-radius: 28px;
+  box-shadow: 0 30px 70px rgba(13,71,255,0.12);
+}
+
+/* =========================
+   TITLE
+========================= */
+.teaching-methodology .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0a1f44;
+  line-height: 1.3;
+}
+
+/* =========================
+   TEXT
+========================= */
+.teaching-methodology p {
+  font-size: 1rem;
+  color: #5f6f85;
+  line-height: 1.8;
+}
+
+/* =========================
+   STEPS / TIMELINE
+========================= */
+.method-steps {
+  position: relative;
+  margin-top: 35px;
+}
+
+.method-steps::before {
+  content: "";
+  position: absolute;
+  left: 26px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(13,71,255,0.2);
+}
+
+.method-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.step-number {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #0d47ff;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 10px 30px rgba(13,71,255,0.35);
+}
+
+.method-content {
+  background: #f9fbff;
+  margin-left: 24px;
+  padding: 22px 24px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(13,71,255,0.08);
+}
+
+.method-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0d47ff;
+  margin-bottom: 6px;
+}
+
+.method-content p {
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+  .teaching-methodology {
+    padding: 80px 0;
+  }
+
+  .teaching-card {
+    padding: 40px 30px;
+  }
+
+  .teaching-methodology .section-title {
+    font-size: 1.9rem;
+  }
+
+  .tm-shape-two {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .teaching-methodology {
+    padding: 60px 0;
+  }
+
+  .teaching-card {
+    padding: 32px 22px;
+  }
+
+  .method-steps::before {
+    left: 22px;
+  }
+
+  .step-number {
+    width: 44px;
+    height: 44px;
+    font-size: 0.9rem;
+  }
+
+  .method-content {
+    margin-left: 18px;
+  }
+}
+
+
+/* =========================
+   FAQs 
+========================= */
+.faqs-section {
+  position: relative;
+  background: #f8fbff;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* =========================
+   BACKGROUND SHAPES
+========================= */
+.faq-bg-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Soft wave panel */
+.faq-shape-one {
+  width: 100%;
+  height: 260px;
+  background: linear-gradient(
+    to right,
+    rgba(13,71,255,0.08),
+    rgba(13,71,255,0.02)
+  );
+  border-radius: 0 0 100% 100%;
+  top: -140px;
+  left: 0;
+}
+
+/* Floating radial circle */
+.faq-shape-two {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(13,71,255,0.12), transparent 70%);
+  border-radius: 50%;
+  bottom: 120px;
+  right: 120px;
+}
+
+/* =========================
+   INNER WRAPPER (REPLACES CONTAINER)
+========================= */
+.faqs-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+.faq-card {
+  background: #ffffff;
+  padding: 50px 45px;
+  border-radius: 28px;
+  box-shadow: 0 30px 70px rgba(13,71,255,0.12);
+}
+
+/* =========================
+   TITLE
+========================= */
+.faqs-section .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0a1f44;
+  line-height: 1.3;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+.accordion-item {
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 10px 30px rgba(13,71,255,0.08);
+  overflow: hidden;
+}
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0a1f44;
+  background: #f9fbff;
+  padding: 18px 22px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(13,71,255,0.08);
+  color: #0d47ff;
+}
+
+.accordion-body {
+  font-size: 0.98rem;
+  color: #5f6f85;
+  line-height: 1.7;
+  padding: 18px 22px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+  .faqs-section {
+    padding: 80px 0;
+  }
+
+  .faq-card {
+    padding: 40px 30px;
+  }
+
+  .faqs-section .section-title {
+    font-size: 1.9rem;
+  }
+
+  .faq-shape-two {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .faqs-section {
+    padding: 60px 0;
+  }
+
+  .faq-card {
+    padding: 32px 22px;
+  }
+
+  .faqs-section .section-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* =========================
+   FINAL CTA
+========================= */
+.final-cta {
+  background: linear-gradient(135deg, #0d47ff, #092ea6);
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+.final-cta .cta-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.final-cta .cta-subtitle {
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.final-cta .btn {
+  min-width: 180px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+@media (max-width: 575px) {
+  .final-cta .cta-title {
+    font-size: 1.9rem;
+  }
+
+  .final-cta .cta-buttons a {
+    display: block;
+    margin: 10px auto;
+  }
+}

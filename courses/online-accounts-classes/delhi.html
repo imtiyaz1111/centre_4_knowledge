@@ -37,7 +37,7 @@
   </head>
 
   <body>
-     <!-- TOP INFO BAR -->
+    <!-- TOP INFO BAR -->
     <div class="top-bar">
       <div class="container">
         <div class="top-left">
@@ -75,8 +75,6 @@
           <a href="../../courses.html">Courses</a>
           <a href="../../about.html">About Us</a>
           <a href="../../contact.html">Contact Us</a>
-     
-          
         </nav>
 
         <div class="hamburger" id="hamburger">
@@ -125,10 +123,18 @@
               <h4>Enquire Now</h4>
               <p>Get batch details & free counselling</p>
 
-              <form>
+              <form action="../../send-inquiry.php" method="POST">
+                <!-- SOURCE TRACKING -->
+                <input
+                  type="hidden"
+                  name="source"
+                  value="Accounts Online – Delhi Page"
+                />
+
                 <div class="mb-3">
                   <input
                     type="text"
+                    name="name"
                     class="form-control"
                     placeholder="Your Name"
                     required
@@ -138,15 +144,16 @@
                 <div class="mb-3">
                   <input
                     type="email"
+                    name="email"
                     class="form-control"
                     placeholder="Email Address"
-                    required
                   />
                 </div>
 
                 <div class="mb-3">
                   <input
                     type="tel"
+                    name="phone"
                     class="form-control"
                     placeholder="Phone Number"
                     required
@@ -155,6 +162,7 @@
 
                 <div class="mb-3">
                   <textarea
+                    name="message"
                     class="form-control"
                     rows="3"
                     placeholder="Your Message"
@@ -559,7 +567,7 @@
         </div>
       </div>
     </section>
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container">
         <div class="row gy-4">

@@ -76,8 +76,6 @@
           <a href="./courses.html">Courses</a>
           <a href="./about.html">About Us</a>
           <a href="./contact.html">Contact Us</a>
-     
-          
         </nav>
 
         <div class="hamburger" id="hamburger">
@@ -650,26 +648,37 @@
         </div>
 
         <!-- Form -->
-        <form class="support-form">
+        <form class="support-form" action="./send-inquiry.php" method="POST">
           <div class="row g-4">
             <div class="col-md-6">
-              <input type="text" placeholder="Your Name*" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name*"
+                required
+              />
             </div>
 
             <div class="col-md-6">
-              <input type="email" placeholder="Your Email*" required />
+              <input type="email" name="email" placeholder="Your Email*" />
             </div>
 
             <div class="col-md-6">
-              <input type="tel" placeholder="Your Phone*" required />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone*"
+                required
+              />
             </div>
 
             <div class="col-md-6">
-              <input type="text" placeholder="Subject*" required />
+              <input type="text" name="city" placeholder="City" />
             </div>
 
             <div class="col-12">
               <textarea
+                name="message"
                 rows="5"
                 placeholder="Write a Message*"
                 required

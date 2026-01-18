@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,7 +28,7 @@
     />
   </head>
   <body>
-      <!-- TOP INFO BAR -->
+    <!-- TOP INFO BAR -->
     <div class="top-bar">
       <div class="container">
         <div class="top-left">
@@ -38,14 +38,22 @@
           >
         </div>
         <div class="top-right">
-          <a href="https://www.facebook.com/100070201903869/posts/117101030161214/"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/centre_4_knowledge/"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="https://in.linkedin.com/in/dr-amit-parihast-2117ba158"></i></a>
+          <a
+            href="https://www.facebook.com/100070201903869/posts/117101030161214/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/centre_4_knowledge/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#"
+            ><i
+              class="https://in.linkedin.com/in/dr-amit-parihast-2117ba158"
+            ></i
+          ></a>
         </div>
       </div>
     </div>
 
-    
     <!-- NAVBAR -->
     <header class="navbar">
       <div class="container nav-content">
@@ -58,7 +66,6 @@
           <a href="./courses.html">Courses</a>
           <a href="./about.html">About Us</a>
           <a href="./contact.html">Contact Us</a>
-     
         </nav>
 
         <div class="hamburger" id="hamburger">
@@ -196,26 +203,40 @@
         </div>
 
         <!-- Form -->
-        <form class="support-form">
+        <form class="support-form" action="./send-inquiry.php" method="POST">
+          <!-- PAGE SOURCE -->
+          <input type="hidden" name="source" value="Contact Page" />
+
           <div class="row g-4">
             <div class="col-md-6">
-              <input type="text" placeholder="Your Name*" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name*"
+                required
+              />
             </div>
 
             <div class="col-md-6">
-              <input type="email" placeholder="Your Email*" required />
+              <input type="email" name="email" placeholder="Your Email*" />
             </div>
 
             <div class="col-md-6">
-              <input type="tel" placeholder="Your Phone*" required />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone*"
+                required
+              />
             </div>
 
             <div class="col-md-6">
-              <input type="text" placeholder="Subject*" required />
+              <input type="text" name="subject" placeholder="Subject*" />
             </div>
 
             <div class="col-12">
               <textarea
+                name="message"
                 rows="5"
                 placeholder="Write A Message*"
                 required
@@ -229,86 +250,102 @@
         </form>
       </div>
     </section>
-     <!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="row gy-4">
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- ABOUT -->
+          <div class="col-lg-4">
+            <div class="footer-about">
+              <img
+                src="./image/main-logo.png"
+                alt="Centre 4 Knowledge"
+                class="footer-logo"
+              />
 
-      <!-- ABOUT -->
-      <div class="col-lg-4">
-        <div class="footer-about">
-          <img src="./image/main-logo.png" alt="Centre 4 Knowledge" class="footer-logo">
+              <p>
+                We provide focused result oriented approach. Delivers top
+                results in CBSE, ICSE, Class XI, XII – Accounts, Economics, CPT,
+                IPCC, CS year on year.
+              </p>
 
-          <p>
-            We provide focused result oriented approach. Delivers top results
-            in CBSE, ICSE, Class XI, XII – Accounts, Economics, CPT, IPCC, CS
-            year on year.
-          </p>
+              <div class="footer-social">
+                <a
+                  href="https://www.facebook.com/100070201903869/posts/117101030161214/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.youtube.com/user/VideosTeaching"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="https://in.linkedin.com/in/dr-amit-parihast-2117ba158"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://www.instagram.com/centre_4_knowledge/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
 
-          <div class="footer-social">
-            <a href="https://www.facebook.com/100070201903869/posts/117101030161214/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.youtube.com/user/VideosTeaching"><i class="fab fa-youtube"></i></a>
-            <a href="https://in.linkedin.com/in/dr-amit-parihast-2117ba158"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/centre_4_knowledge/"><i class="fab fa-instagram"></i></a>
+          <!-- COURSES -->
+          <div class="col-lg-4">
+            <h5 class="footer-title">Courses</h5>
+
+            <ul class="footer-links">
+              <li>Accounts Home Tuition in Gurgaon</li>
+              <li>Commerce Coaching Classes in Gurgaon</li>
+              <li>11th Commerce Classes in Gurgaon</li>
+              <li>12th Commerce Coaching Classes in Gurgaon</li>
+              <li>Accounts Tuition in Gurgaon</li>
+              <li>Best Commerce Tuition Classes</li>
+            </ul>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="col-lg-4">
+            <h5 class="footer-title">Contact Info</h5>
+
+            <ul class="footer-contact">
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 9310000123</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>amitparihast@gmail.com</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                  140, 2nd Floor, Sector 27, Main Galleria Road (Opposite
+                  Janpratinidhi Apartment) Gurgaon 122009
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- COURSES -->
-      <div class="col-lg-4">
-        <h5 class="footer-title">Courses</h5>
-
-        <ul class="footer-links">
-          <li>Accounts Home Tuition in Gurgaon</li>
-          <li>Commerce Coaching Classes in Gurgaon</li>
-          <li>11th Commerce Classes in Gurgaon</li>
-          <li>12th Commerce Coaching Classes in Gurgaon</li>
-          <li>Accounts Tuition in Gurgaon</li>
-          <li>Best Commerce Tuition Classes</li>
-        </ul>
+      <!-- FOOTER BOTTOM -->
+      <div class="footer-bottom">
+        <p>
+          © 2026 Centre 4 Knowledge. All Rights Reserved. | Proudly
+          <span class="footer-heart">♥️</span> Made in India | Managed by
+          <strong
+            ><a
+              href="https://adholicprashant.com"
+              target="_blank"
+              class="footer-link"
+            >
+              Adholic Prashant
+            </a></strong
+          >
+        </p>
       </div>
-
-      <!-- CONTACT INFO -->
-      <div class="col-lg-4">
-        <h5 class="footer-title">Contact Info</h5>
-
-        <ul class="footer-contact">
-          <li>
-            <i class="fa-solid fa-phone"></i>
-            <span>+91 9310000123</span>
-          </li>
-
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <span>amitparihast@gmail.com</span>
-          </li>
-
-          <li>
-            <i class="fa-solid fa-location-dot"></i>
-            <span>
-              140, 2nd Floor, Sector 27, Main Galleria Road
-              (Opposite Janpratinidhi Apartment) Gurgaon 122009
-            </span>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-
-<!-- FOOTER BOTTOM -->
-<div class="footer-bottom">
-  <p>
-    © 2026 Centre 4 Knowledge. All Rights Reserved. |
-    Proudly <span class="footer-heart">♥️</span> Made in India |
-    Managed by <strong><a href="https://adholicprashant.com" target="_blank" class="footer-link">
-      Adholic Prashant
-    </a></strong>
-  </p>
-</div>
-
-</footer>
- <!-- Floating Action Buttons -->
+    </footer>
+    <!-- Floating Action Buttons -->
     <div class="floating-buttons">
       <!-- Scroll to Top -->
       <button

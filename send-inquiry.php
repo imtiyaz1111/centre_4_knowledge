@@ -5,84 +5,89 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     exit();
 }
 
-// ================= SANITIZE INPUT =================
-function cleanInput($data) {
+// ================= SANITIZE FUNCTION =================
+function clean($data) {
     return htmlspecialchars(trim($data), ENT_QUOTES, 'UTF-8');
 }
 
-$name   = cleanInput($_POST['name'] ?? '');
-$phone  = cleanInput($_POST['phone'] ?? '');
-$city   = cleanInput($_POST['city'] ?? 'Not Provided');
-$source = cleanInput($_POST['source'] ?? 'Website Inquiry');
+// ================= FETCH DATA =================
+$name    = clean($_POST['name'] ?? '');
+$email   = clean($_POST['email'] ?? 'Not Provided');
+$phone   = clean($_POST['phone'] ?? '');
+$city    = clean($_POST['city'] ?? 'Not Provided');
+$message = clean($_POST['message'] ?? '');
 
 // ================= VALIDATION =================
-if (empty($name) || empty($phone)) {
-    echo "Required fields are missing.";
+if ($name === '' || $phone === '' || $message === '') {
+    echo "Required fields missing.";
     exit();
 }
 
 // ================= EMAIL CONFIG =================
-$to = "accountsacademy@gmail.com"; // CHANGE TO YOUR EMAIL
-$subject = "📩 New Inquiry – Accounts Online Classes";
+$to = "amitparihast@gmail.com"; // RECEIVER EMAIL
+$subject = "📩 New Inquiry – AmitParihast";
 
-// IMPORTANT: Domain email recommended
-$fromEmail = "no-reply@yourdomain.com";
-$fromName  = "Accounts Online Academy";
+// IMPORTANT: DOMAIN EMAIL (better deliverability)
+$fromEmail = "no-reply@amitparihast.com";
+$fromName  = "Amit Parihast Website";
 
 // ================= EMAIL BODY =================
-$message = "
+$emailBody = "
 <html>
 <head>
-<style>
-body { font-family: Arial, sans-serif; }
-table { border-collapse: collapse; width: 100%; }
-td { padding: 10px; border: 1px solid #ddd; }
-h2 { color: #0b2c4d; }
-</style>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { border-collapse: collapse; width: 100%; }
+    td { padding: 10px; border: 1px solid #ddd; }
+    h2 { color: #0b2c4d; }
+  </style>
 </head>
 <body>
 
-<h2>📥 New Student Inquiry Received</h2>
+<h2>📥 New Website Inquiry</h2>
 
 <table>
-<tr>
+  <tr>
     <td><strong>Name</strong></td>
     <td>{$name}</td>
-</tr>
-<tr>
-    <td><strong>Mobile</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Email</strong></td>
+    <td>{$email}</td>
+  </tr>
+  <tr>
+    <td><strong>Phone</strong></td>
     <td>{$phone}</td>
-</tr>
-<tr>
+  </tr>
+  <tr>
     <td><strong>City</strong></td>
     <td>{$city}</td>
-</tr>
-<tr>
-    <td><strong>Source Page</strong></td>
-    <td>{$source}</td>
-</tr>
+  </tr>
+  <tr>
+    <td><strong>Message</strong></td>
+    <td>{$message}</td>
+  </tr>
 </table>
 
 <br>
 <p>
-<strong>Website:</strong> Accounts Online Academy<br>
-<strong>Time:</strong> " . date("d M Y, h:i A") . "<br>
-<strong>IP Address:</strong> " . $_SERVER['REMOTE_ADDR'] . "
+<strong>Website:</strong> https://www.amitparihast.com/<br>
+<strong>Date:</strong> " . date("d M Y, h:i A") . "<br>
+<strong>IP:</strong> " . $_SERVER['REMOTE_ADDR'] . "
 </p>
 
 </body>
 </html>
 ";
 
-// ================= EMAIL HEADERS =================
+// ================= HEADERS =================
 $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 $headers .= "From: {$fromName} <{$fromEmail}>\r\n";
 $headers .= "Reply-To: {$fromEmail}\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
 
-// ================= SEND EMAIL =================
-if (mail($to, $subject, $message, $headers)) {
+// ================= SEND MAIL =================
+if (mail($to, $subject, $emailBody, $headers)) {
     header("Location: thank-you.html");
     exit();
 } else {

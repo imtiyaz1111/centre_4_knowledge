@@ -33,7 +33,7 @@
   height: 300px;
   background: linear-gradient(
     135deg,
-    rgba(13,71,255,0.08),
+ rgba(13,71,255,0.18),
     rgba(13,71,255,0.02)
   );
   transform: rotate(-10deg);
@@ -167,6 +167,213 @@
   }
 }
 
+/* =========================
+   FACULTY PROFILE SECTION
+========================= */
+.faculty-profile {
+  position: relative;
+  padding: 110px 0;
+  background: linear-gradient(
+    135deg,
+    #f8fbff 0%,
+    #eef4ff 45%,
+    #f1fbf9 100%
+  );
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* =========================
+   BACKGROUND SHAPES
+========================= */
+.fp-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Blue radial glow */
+.fp-shape-one {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(13,71,255,0.18), transparent 70%);
+  border-radius: 50%;
+  top: -260px;
+  left: -240px;
+}
+
+/* Teal angled panel */
+.fp-shape-two {
+  width: 600px;
+  height: 300px;
+  background: linear-gradient(
+    135deg,
+ rgba(13,71,255,0.18),
+    rgba(13,71,255,0.02)
+  );
+  transform: rotate(-8deg);
+  bottom: -160px;
+  right: -260px;
+  border-radius: 60px;
+}
+
+/* Decorative dots */
+.fp-shape-dots {
+  width: 160px;
+  height: 160px;
+  background-image: radial-gradient(#0d47ff 2px, transparent 2px);
+  background-size: 18px 18px;
+  opacity: 0.15;
+  top: 80px;
+  right: 120px;
+}
+
+/* =========================
+   CONTENT ABOVE SHAPES
+========================= */
+.faculty-profile .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   TEXT CONTENT
+========================= */
+.fp-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0a1f44;
+  line-height: 1.25;
+  margin-bottom: 22px;
+}
+
+.fp-title span {
+  color: #0d47ff;
+}
+
+.fp-text {
+  font-size: 1.05rem;
+  color: #5f6f85;
+  line-height: 1.8;
+  margin-bottom: 26px;
+  max-width: 520px;
+}
+
+/* =========================
+   POINT LIST
+========================= */
+.fp-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fp-points li {
+  position: relative;
+  font-size: 1rem;
+  color: #0a1f44;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.fp-points li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #38bfa7;
+  font-weight: 700;
+}
+
+/* =========================
+   IMAGE AREA
+========================= */
+.fp-image-wrap {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+
+/* Floating circle behind image */
+.fp-circle {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background: linear-gradient(135deg, #0d47ff, #38bfa7);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0.15;
+}
+
+/* Profile image */
+.fp-image {
+  position: relative;
+  max-width: 320px;
+  border-radius: 22px;
+  box-shadow: 0 30px 70px rgba(13,71,255,0.25);
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+
+.fp-image-wrap:hover .fp-image {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 90px rgba(13,71,255,0.35);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+  .faculty-profile {
+    padding: 90px 0;
+    text-align: center;
+  }
+
+  .fp-title {
+    font-size: 2.3rem;
+  }
+
+  .fp-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fp-points {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .fp-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .fp-image {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 575px) {
+  .faculty-profile {
+    padding: 70px 0;
+  }
+
+  .fp-title {
+    font-size: 2rem;
+  }
+
+  .fp-text {
+    font-size: 0.95rem;
+  }
+
+  .fp-image {
+    max-width: 240px;
+  }
+}
+
 
 /* =========================
    FACULTY DETAIL SECTION
@@ -203,8 +410,8 @@
   height: 320px;
   background: linear-gradient(
     135deg,
-    rgba(56,191,167,0.15),
-    rgba(56,191,167,0.04)
+    rgba(13,71,255,0.18),
+    rgba(13,71,255,0.02)
   );
   border-radius: 60% 40% 0 0;
   bottom: -180px;

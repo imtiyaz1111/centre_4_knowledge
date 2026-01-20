@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,8 +19,8 @@
       rel="stylesheet"
     />
 
-    <!-- Favicon -->
-    <link rel="icon" href="image/main-logo.png" type="image/png" />
+    <!-- Website Icon / Favicon -->
+    <link rel="icon" type="image/png" href="./image/fav-icon.png" />
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -54,12 +54,11 @@
       </div>
     </div>
 
-    
     <!-- NAVBAR -->
     <header class="navbar">
       <div class="container nav-content">
         <div class="logo">
-          <img src="./image/main-logo.png" alt="Centre 4 Knowledge" />
+          <img src="./image/main-logo.png" alt="Dr. Amit Parihast" />
         </div>
 
         <nav class="nav-links" id="navLinks">
@@ -67,7 +66,6 @@
           <a href="./courses.html">Courses</a>
           <a href="./about.html">About Us</a>
           <a href="./contact.html">Contact Us</a>
-         
         </nav>
 
         <div class="hamburger" id="hamburger">
@@ -95,7 +93,7 @@
             </h1>
 
             <p class="about-subtitle">
-              Centre 4 Knowledge is committed to delivering result-oriented,
+              Dr. Amit Parihast is committed to delivering result-oriented,
               concept-driven coaching for Commerce & Professional courses,
               helping students build strong academic and career foundations.
             </p>
@@ -172,6 +170,58 @@
         </div>
       </div>
     </section>
+    <!-- Sticky Book Free Demo Button -->
+    <button
+      class="demo-sticky-btn"
+      data-bs-toggle="modal"
+      data-bs-target="#demoModal"
+    >
+      Book Free Demo
+    </button>
+
+    <!-- Demo Modal -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content demo-modal">
+          <div class="modal-header">
+            <h5 class="modal-title">Book a Free Demo Class</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form action="./send-inquiry.php" method="POST" class="demo-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name*"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone*"
+                required
+              />
+              <input type="email" name="email" placeholder="Your Email" />
+
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button type="submit" class="demo-submit-btn">
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- faculty-detail-section -->
     <section class="faculty-detail">
@@ -209,7 +259,7 @@
               After that, he completed his Master’s degree in Commerce and
               followed it up with an MBA (Marketing). He has obtained a
               doctorate for his thesis in Commerce. Currently, he is on the
-              Advisory Board of Centre 4 Knowledge (C4K), a unit of “Commerce
+              Advisory Board of Dr. Amit Parihast (C4K), a unit of “Commerce
               Flagship”.
             </p>
 
@@ -235,7 +285,7 @@
             <div class="footer-about">
               <img
                 src="./image/main-logo.png"
-                alt="Centre 4 Knowledge"
+                alt="Dr. Amit Parihast"
                 class="footer-logo"
               />
 
@@ -307,7 +357,7 @@
       <!-- FOOTER BOTTOM -->
       <div class="footer-bottom">
         <p>
-          © 2026 Centre 4 Knowledge. All Rights Reserved. | Proudly
+          © 2026 Dr. Amit Parihast. All Rights Reserved. | Proudly
           <span class="footer-heart">♥️</span> Made in India | Managed by
           <strong
             ><a
@@ -321,7 +371,7 @@
         </p>
       </div>
     </footer>
-     <!-- Floating Action Buttons -->
+    <!-- Floating Action Buttons -->
     <div class="floating-buttons">
       <!-- Scroll to Top -->
       <button

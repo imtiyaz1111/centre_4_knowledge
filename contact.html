@@ -19,8 +19,8 @@
       rel="stylesheet"
     />
 
-    <!-- Favicon -->
-    <link rel="icon" href="image/main-logo.png" type="image/png" />
+     <!-- Website Icon / Favicon -->
+    <link rel="icon" type="image/png" href="./image/fav-icon.png" />
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -58,7 +58,7 @@
     <header class="navbar">
       <div class="container nav-content">
         <div class="logo">
-          <img src="./image/main-logo.png" alt="Centre 4 Knowledge" />
+          <img src="./image/main-logo.png" alt="Dr. Amit Parihast" />
         </div>
 
         <nav class="nav-links" id="navLinks">
@@ -250,6 +250,38 @@
         </form>
       </div>
     </section>
+    <!-- Sticky Book Free Demo Button -->
+<button class="demo-sticky-btn" data-bs-toggle="modal" data-bs-target="#demoModal">
+  Book Free Demo
+</button>
+
+<!-- Demo Modal -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content demo-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Book a Free Demo Class</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="./send-inquiry.php" method="POST" class="demo-form">
+          <input type="text" name="name" placeholder="Your Name*" required />
+          <input type="tel" name="phone" placeholder="Your Phone*" required />
+          <input type="email" name="email" placeholder="Your Email" />
+          
+          <textarea name="message" rows="3" placeholder="Your Message"></textarea>
+
+          <button type="submit" class="demo-submit-btn">
+            Submit Request
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
     <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container">
@@ -259,7 +291,7 @@
             <div class="footer-about">
               <img
                 src="./image/main-logo.png"
-                alt="Centre 4 Knowledge"
+                alt="Dr. Amit Parihast"
                 class="footer-logo"
               />
 
@@ -331,7 +363,7 @@
       <!-- FOOTER BOTTOM -->
       <div class="footer-bottom">
         <p>
-          © 2026 Centre 4 Knowledge. All Rights Reserved. | Proudly
+          © 2026 Dr. Amit Parihast. All Rights Reserved. | Proudly
           <span class="footer-heart">♥️</span> Made in India | Managed by
           <strong
             ><a

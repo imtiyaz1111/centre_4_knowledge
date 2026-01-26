@@ -166,6 +166,68 @@
   }
 }
 
+/* CITIES SECTION */
+.cities-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.cities-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0b2e6f;
+  margin-bottom: 50px;
+}
+
+/* CITY CARD */
+.city-card {
+  background: #f6f9ff;
+  border-radius: 14px;
+  padding: 28px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.city-card h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b2e6f;
+}
+
+/* ICON */
+.city-icon {
+  width: 50px;
+  height: 50px;
+  background: #e9f0ff;
+  color: #1e5eff;
+  font-size: 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* HOVER EFFECT */
+.city-card:hover {
+  background: #ffffff;
+  border-color: #1e5eff;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(30, 94, 255, 0.15);
+}
+
+.city-card:hover .city-icon {
+  background: #1e5eff;
+  color: #ffffff;
+}
+
+
 /* =====================================================
    SEARCH BAR
 ===================================================== */

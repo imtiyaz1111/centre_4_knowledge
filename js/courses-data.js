@@ -1,5 +1,5 @@
 /* =====================================================
-   COURSES DATA – Centre 4 Knowledge
+   COURSES DATA 
    Used for:
    - course.html (all courses listing)
    - city-wise course detail pages

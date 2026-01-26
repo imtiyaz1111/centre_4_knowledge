@@ -14,27 +14,31 @@
       content="online accounts classes, accounts online coaching, best online accounts teacher, class 11 accounts, class 12 accounts, cuet accounts online"
     />
 
+    <!-- Website Icon / Favicon -->
+    <link rel="icon" type="image/png" href="./image/fav-icon.png" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
     <!-- Icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
 
-     <!-- Website Icon / Favicon -->
-    <link rel="icon" type="image/png" href="./image/fav-icon.png" />
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
@@ -85,79 +89,82 @@
         </div>
       </div>
     </header>
-    <!-- HERO SLIDER -->
-    <section class="edu-hero">
-      <div class="edu-container">
-        <div class="edu-slider">
-          <!-- SLIDE 1 -->
-          <div class="edu-slide active">
-            <div class="edu-content">
-              <span class="edu-badge">Trusted Commerce Institute</span>
-              <h1>
-                Best Commerce Tutor<br />
-                <span>Around The World</span>
-              </h1>
-              <p>
-                Personalized online coaching for Commerce, CA, ACCA & CS
-                students with expert guidance.
-              </p>
-              <a href="contact.html" class="hero-btn">Contact Us</a>
-            </div>
+    <!-- ===== HERO SLIDER START ===== -->
+    <section class="hero-slider">
+      <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="hero-inner">
+              <div class="hero-text">
+                <span class="hero-badge">Trusted Commerce Institute</span>
+                <h1>
+                  Best Commerce Tutor <br />
+                  <span>Around The World</span>
+                </h1>
+                <p>
+                  Personalized online coaching for Commerce, CA, ACCA & CS
+                  students with expert guidance and result-oriented teaching.
+                </p>
+                <a href="./contact.html" class="hero-btn">Contact Us</a>
+              </div>
 
-            <div class="edu-image">
-              <img src="./image/slide1.png" alt="Online Class" />
-            </div>
-          </div>
-
-          <!-- SLIDE 2 -->
-          <div class="edu-slide">
-            <div class="edu-content">
-              <span class="edu-badge">Expert Faculty</span>
-              <h1>
-                Learn Smarter With<br />
-                <span>Expert Mentors</span>
-              </h1>
-              <p>
-                Interactive classes, doubt-clearing sessions and exam-focused
-                preparation.
-              </p>
-              <a href="courses.html" class="hero-btn">View Courses</a>
-            </div>
-
-            <div class="edu-image">
-              <img src="./image/slide2.png" alt="Expert Mentors" />
+              <div class="hero-image">
+                <img src="./image/hero-1.png" alt="Online Commerce Coaching" />
+              </div>
             </div>
           </div>
 
-          <!-- SLIDE 3 -->
-          <div class="edu-slide">
-            <div class="edu-content">
-              <span class="edu-badge">Proven Results</span>
-              <h1>
-                Achieve Academic<br />
-                <span>Excellence</span>
-              </h1>
-              <p>
-                Proven results with structured learning paths and personal
-                attention.
-              </p>
-              <a href="courses.html" class="hero-btn">Get Started</a>
-            </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="hero-inner">
+              <div class="hero-text">
+                <span class="hero-badge">15+ Years Experience</span>
+                <h1>
+                  Learn From <br />
+                  <span>Expert Mentors</span>
+                </h1>
+                <p>
+                  Concept-driven classes designed for CBSE, ICSE, CUET, CA & CS
+                  aspirants with personal attention.
+                </p>
+                <a href="./courses.html" class="hero-btn">View Courses</a>
+              </div>
 
-            <div class="edu-image">
-              <img src="./image/slider3.png" alt="Student Success" />
+              <div class="hero-image">
+                <img src="./image/hero-2.png" alt="Expert Faculty" />
+              </div>
             </div>
           </div>
 
-          <!-- DOTS -->
-          <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="hero-inner">
+              <div class="hero-text">
+                <span class="hero-badge">Proven Results</span>
+                <h1>
+                  Structured Learning <br />
+                  <span>For Career Success</span>
+                </h1>
+                <p>
+                  Exam-focused methodology with regular assessments, doubt
+                  sessions and performance tracking.
+                </p>
+                <a href="./contact.html" class="hero-btn">Book Free Demo</a>
+              </div>
+
+              <div class="hero-image">
+                <img src="./image/hero-3.png" alt="Structured Learning" />
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
       </div>
     </section>
+    <!-- ===== HERO SLIDER END ===== -->
 
     <!-- academy-intro -->
     <section class="academy-intro">
@@ -294,7 +301,9 @@
               <li>✔ Student-friendly & engaging learning environment</li>
             </ul>
 
-            <a href="#" class="btn btn-primary mentor-btn">Read More</a>
+            <a href="./about.html" class="btn btn-primary mentor-btn"
+              >Read More</a
+            >
           </div>
 
           <!-- RIGHT IMAGE -->
@@ -320,6 +329,198 @@
         </div>
       </div>
     </section>
+
+    <!-- ===== FEATURED COURSES SLIDER ===== -->
+    <section class="featured-courses py-5 position-relative">
+      <div class="container position-relative z-1">
+        <div class="text-center mb-5">
+          <h2 class="section-title">
+            Featured <span style="color: #0d47ff">Courses</span>
+          </h2>
+          <p class="section-subtitle">
+            Popular & high-demand courses for commerce students
+          </p>
+        </div>
+
+        <div
+          id="featuredCourseSlider"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3500"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="course-slide">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-6">
+                    <img
+                      src="./image/courses/online-accounts.png"
+                      class="course-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="course-content">
+                      <h3>Online Accounts Classes</h3>
+                      <p>
+                        Live & recorded accounts classes with expert faculty and
+                        structured exam preparation.
+                      </p>
+                      <a
+                        href="./courses/online-accounts-classes/index.html"
+                        class="btn btn-light"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="course-slide">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-6">
+                    <img
+                      src="./image/courses/best-accounts-teacher.png"
+                      class="course-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="course-content">
+                      <h3>Best Online Accounts Teacher</h3>
+                      <p>
+                        Learn from one of the best commerce educators with 15+
+                        years of experience.
+                      </p>
+                      <a
+                        href="./courses/best-online-accounts-teacher/index.html"
+                        class="btn btn-light"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="course-slide">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-6">
+                    <img
+                      src="./image/courses/cbse-accounts.png"
+                      class="course-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="course-content">
+                      <h3>CBSE Accounts Online Classes</h3>
+                      <p>
+                        CBSE-focused accounts coaching for Class 11 & 12 with
+                        concept clarity.
+                      </p>
+                      <a
+                        href="./courses/cbse-accounts-online/index.html"
+                        class="btn btn-light"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="course-slide">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-6">
+                    <img
+                      src="./image/courses/class-12.png"
+                      class="course-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="course-content">
+                      <h3>Class 12 Accounts Online Classes</h3>
+                      <p>
+                        Board exam–oriented accounts preparation with structured
+                        practice.
+                      </p>
+                      <a
+                        href="./courses/class-12-accounts-online/index.html"
+                        class="btn btn-light"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+              <div class="course-slide">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-6">
+                    <img
+                      src="./image/courses/cuet-account-preparation.png"
+                      class="course-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="course-content">
+                      <h3>CUET Accounts Preparation Online</h3>
+                      <p>
+                        Dedicated CUET accounts preparation with MCQs & exam
+                        strategy.
+                      </p>
+                      <a
+                        href="./courses/cuet-account-preparation-online/index.html"
+                        class="btn btn-light"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrows -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#featuredCourseSlider"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#featuredCourseSlider"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Background Shapes -->
+      <span class="fc-shape shape-1"></span>
+      <span class="fc-shape shape-2"></span>
+    </section>
+
     <!-- courses-section -->
     <section class="courses-section py-5">
       <!-- background shapes -->
@@ -471,6 +672,87 @@
         </div>
       </div>
     </section>
+
+    <!-- ===== RESULT METHODOLOGY SECTION ===== -->
+    <section class="result-methodology py-5 position-relative overflow-hidden">
+      <!-- Background Shapes -->
+      <span class="rm-shape rm-shape-1"></span>
+      <span class="rm-shape rm-shape-2"></span>
+      <span class="rm-dots"></span>
+
+      <div class="container position-relative z-1">
+        <!-- SECTION HEADER (NEW) -->
+        <div class="text-center mb-5">
+          <h2 class="rm-section-title">
+            Our Proven <span style="color: #1e56ff">Methodology</span>
+          </h2>
+          <p class="rm-section-subtitle">
+            A structured, result-driven approach designed to build clarity,
+            confidence, and consistent academic success.
+          </p>
+        </div>
+
+        <div class="row align-items-center">
+          <!-- LEFT: RESULT LETTERS -->
+          <div class="col-lg-2 col-md-3 text-center">
+            <div class="result-letters-vertical">
+              <span class="active" data-step="R">R</span>
+              <span data-step="E">E</span>
+              <span data-step="S">S</span>
+              <span data-step="U">U</span>
+              <span data-step="L">L</span>
+              <span data-step="T">T</span>
+            </div>
+          </div>
+
+          <!-- RIGHT: CONTENT -->
+          <div class="col-lg-10 col-md-9">
+            <div class="result-content-box">
+              <h3 id="resultTitle">Reflection</h3>
+
+              <p id="resultText">
+                Our demo class demonstrates purposeful and careful reflection on
+                one's learning experiences, activities, and results associated
+                with the subject.
+              </p>
+
+              <!-- Stats -->
+              <div class="row g-4 mt-4">
+                <div class="col-md-6 col-lg-3">
+                  <div class="result-stat">
+                    <h4>3+</h4>
+                    <span>No. of Centers</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="result-stat">
+                    <h4>25+</h4>
+                    <span>Maximum Batch Size</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="result-stat">
+                    <h4>15+</h4>
+                    <span>Courses Offered</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="result-stat">
+                    <h4>11+</h4>
+                    <span>Team Members</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="tel:09310000123" class="btn btn-primary mt-4">
+                Book Seat – Call 09310-000-123
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- special-features -->
     <section class="special-features py-5">
       <!-- background shapes -->
@@ -562,81 +844,173 @@
         </div>
       </div>
     </section>
-    <!-- testimonials-section -->
-    <section class="testimonials-section py-5">
-      <!-- background shapes -->
-      <span class="ts-bg-shape ts-shape-one"></span>
-      <span class="ts-bg-shape ts-shape-two"></span>
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonial-marquee py-5 position-relative overflow-hidden">
+      <!-- Background Shapes -->
+      <span class="tm-shape tm-shape-1"></span>
+      <span class="tm-shape tm-shape-2"></span>
 
-      <div class="container">
-        <!-- Section Heading -->
+      <div class="container position-relative z-1">
+        <!-- Heading -->
         <div class="text-center mb-5">
-          <h2 class="section-title">
+          <h2 class="tm-title">
             What Students Say About <span>Amit Sir</span>
           </h2>
-          <p class="section-subtitle">
-            Real experiences from students who transformed their careers
+          <p class="tm-subtitle">
+            Real experiences from students who achieved academic success
           </p>
         </div>
 
-        <!-- Video Testimonials -->
-        <div class="row g-4 justify-content-center">
-          <!-- Testimonial 1 -->
-          <div class="col-lg-5 col-md-6">
-            <div class="video-card">
-              <div class="ratio ratio-16x9">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/XC8IAkn0P3g?si=W9I06QYb6JS5Z4Kf"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="video-content">
-                <h6>Top Commerce Institute in Gurugram</h6>
-                <p>Student Review – Accountancy & Commerce</p>
-              </div>
+        <!-- ===== TEXT TESTIMONIALS ===== -->
+
+        <!-- ROW 1 -->
+        <div class="tm-row marquee-left">
+          <div class="tm-track">
+            <div class="tm-card">
+              <p>
+                I scored 92% in Accounts because of Amit Sir’s guidance and
+                practice material.
+              </p>
+              <strong>Pooja Gupta</strong>
+              <span>Class 12 – CBSE</span>
+            </div>
+
+            <div class="tm-card">
+              <p>
+                Amit Sir explains concepts so clearly that Accounts became my
+                strongest subject.
+              </p>
+              <strong>Riya Sharma</strong>
+              <span>Class 12 – CBSE</span>
+            </div>
+
+            <div class="tm-card">
+              <p>
+                Best commerce teacher in Gurgaon. Regular tests and doubt
+                sessions helped a lot.
+              </p>
+              <strong>Arjun Verma</strong>
+              <span>Class 11 – Commerce</span>
+            </div>
+
+            <!-- Duplicate for loop -->
+            <div class="tm-card">
+              <p>
+                I scored 92% in Accounts because of Amit Sir’s guidance and
+                practice material.
+              </p>
+              <strong>Pooja Gupta</strong>
+              <span>Class 12 – CBSE</span>
+            </div>
+
+            <div class="tm-card">
+              <p>
+                Amit Sir explains concepts so clearly that Accounts became my
+                strongest subject.
+              </p>
+              <strong>Riya Sharma</strong>
+              <span>Class 12 – CBSE</span>
+            </div>
+
+            <div class="tm-card">
+              <p>
+                Best commerce teacher in Gurgaon. Regular tests and doubt
+                sessions helped a lot.
+              </p>
+              <strong>Arjun Verma</strong>
+              <span>Class 11 – Commerce</span>
             </div>
           </div>
+        </div>
 
-          <!-- Testimonial 2 -->
-          <div class="col-lg-5 col-md-6">
-            <div class="video-card">
-              <div class="ratio ratio-16x9">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/q1cnFoQ9VkY?si=dG2kz5wiSOXYrJMS"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+        <!-- ROW 2 -->
+        <div class="tm-row marquee-right mt-4">
+          <div class="tm-track">
+            <div class="tm-card">
+              <p>
+                Structured teaching and exam-focused approach helped me gain
+                confidence.
+              </p>
+              <strong>Neha Singh</strong>
+              <span>CUET Aspirant</span>
+            </div>
+
+            <div class="tm-card">
+              <p>
+                One of the best faculty for commerce students. Highly
+                recommended.
+              </p>
+              <strong>Kunal Mehta</strong>
+              <span>Class 12 – ISC</span>
+            </div>
+
+            <div class="tm-card">
+              <p>
+                Regular revision and concept clarity made learning stress-free.
+              </p>
+              <strong>Ananya Jain</strong>
+              <span>Class 11 – Commerce</span>
+            </div>
+
+            <!-- Duplicate for loop -->
+            <div class="tm-card">
+              <p>
+                Structured teaching and exam-focused approach helped me gain
+                confidence.
+              </p>
+              <strong>Neha Singh</strong>
+              <span>CUET Aspirant</span>
+            </div>
+
+            <div class="tm-card">
+              <p>
+                One of the best faculty for commerce students. Highly
+                recommended.
+              </p>
+              <strong>Kunal Mehta</strong>
+              <span>Class 12 – ISC</span>
+            </div>
+
+            <div class="tm-card">
+              <p>
+                Regular revision and concept clarity made learning stress-free.
+              </p>
+              <strong>Ananya Jain</strong>
+              <span>Class 11 – Commerce</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== VIDEO TESTIMONIALS ===== -->
+        <div class="video-testimonials mt-5">
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-5 col-md-6">
+              <div class="video-card">
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/embed/XC8IAkn0P3g"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video-content">
+                  <h6>Top Commerce Institute in Gurugram</h6>
+                  <p>Student Review – Accounts & Commerce</p>
+                </div>
               </div>
-              <div class="video-content">
-                <h6>Best Coaching for Accounts</h6>
-                <p>Online & Classroom Learning Experience</p>
+            </div>
+
+            <div class="col-lg-5 col-md-6">
+              <div class="video-card">
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/embed/q1cnFoQ9VkY"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video-content">
+                  <h6>Best Coaching for Accounts</h6>
+                  <p>Online & Classroom Experience</p>
+                </div>
               </div>
             </div>
           </div>
@@ -779,38 +1153,58 @@
         </form>
       </div>
     </section>
-<!-- Sticky Book Free Demo Button -->
-<button class="demo-sticky-btn" data-bs-toggle="modal" data-bs-target="#demoModal">
-  Book Free Demo
-</button>
+    <!-- Sticky Book Free Demo Button -->
+    <button
+      class="demo-sticky-btn"
+      data-bs-toggle="modal"
+      data-bs-target="#demoModal"
+    >
+      Book Free Demo
+    </button>
 
-<!-- Demo Modal -->
-<div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content demo-modal">
+    <!-- Demo Modal -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content demo-modal">
+          <div class="modal-header">
+            <h5 class="modal-title">Book a Free Demo Class</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
 
-      <div class="modal-header">
-        <h5 class="modal-title">Book a Free Demo Class</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <div class="modal-body">
+            <form action="./send-inquiry.php" method="POST" class="demo-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name*"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone*"
+                required
+              />
+              <input type="email" name="email" placeholder="Your Email" />
+
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button type="submit" class="demo-submit-btn">
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-
-      <div class="modal-body">
-        <form action="./send-inquiry.php" method="POST" class="demo-form">
-          <input type="text" name="name" placeholder="Your Name*" required />
-          <input type="tel" name="phone" placeholder="Your Phone*" required />
-          <input type="email" name="email" placeholder="Your Email" />
-          
-          <textarea name="message" rows="3" placeholder="Your Message"></textarea>
-
-          <button type="submit" class="demo-submit-btn">
-            Submit Request
-          </button>
-        </form>
-      </div>
-
     </div>
-  </div>
-</div>
 
     <!-- FOOTER -->
     <footer class="site-footer">
@@ -936,6 +1330,8 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

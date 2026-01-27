@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# 1. Redirect .html to clean URL (SEO)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?]
+RewriteRule ^ /%1 [R=301,L]
+
+# 2. Load .html when extension is missing
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [L]
